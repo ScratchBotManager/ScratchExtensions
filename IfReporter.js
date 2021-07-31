@@ -1,1 +1,36 @@
- ext._shutdown = function() {};ext._getStatus = function() { return {status: 2, msg: 'Ready'};}; ext.IfReporter = function (a,b,c,callback){ if (0 == true) { } else { } }; var descriptor = { blocks: [ ["r","( Used For Say Blocks)","If <> Then [] Else []"],],menus: { myMenu: ["option1"" option2"" option3"]},url: 'https://kyleplo.github.io/scratch-extension-creator/help#'Hello!};ScratchExtensions.register('IfReporter', descriptor, ext); b;
+class NitroBlock {
+    getInfo() {
+        return {
+            "id": "IfReporter",
+            "name": "IfReporter",
+            "blocks": [{
+                    "opcode": "IfReporterBlock",
+                    "blockType": "reporter",
+                    "text": "If [bool] Then [string1] Else [string2]",
+                    "arguments": {
+                        "bool": {
+                            "type": "boolean"
+                        },
+                        "string1": {
+                            "type": "string",
+                            "defaultValue": "True"
+                        },
+                        "string": {
+                            "type": "string",
+                            "defaultValue": "False"
+                        }
+                    }
+                },
+            }],
+        "menus": { //we will get back to this in a later tutorial
+        }
+    };
+    IfReporterBlock({bool, string1, string2}) {
+     if (bool = true) {
+     return string1
+     } else {
+      return string2
+     }
+        
+    };
+}
