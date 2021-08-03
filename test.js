@@ -1,0 +1,1 @@
+ext._shutdown = function() {};ext._getStatus = function() { return {status: 2, msg: 'Ready'};}; ext.test = function (callback){ alert("Hello!") }; var descriptor = { blocks: [ [" ","( hello)","test"],],menus: {},url: 'https://kyleplo.github.io/scratch-extension-creator/help#'Hello!};ScratchExtensions.register('My Extension', descriptor, ext);
