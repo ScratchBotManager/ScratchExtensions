@@ -25,11 +25,11 @@ class IfReporter {
     }
     secId1({ifbool, then, elsestr})
     if (ifbool == true) {
-     return(then);   
+        callback(then);
     } else {
-        return(elsestr);
+        callback(elsestr);
            }
-        callback();
+
     }
     _formatMenu(menu) {
         const m = [];
