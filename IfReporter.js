@@ -6,7 +6,7 @@
 	};
 	var descriptor = {
 	        blocks: [
-	            ['r', 'if [if] then [then] else [else]', 'secId1'],
+	            ['r', 'if %if then %then else %else', 'secId1'],
 	        ],
 			menus: {
 			},
