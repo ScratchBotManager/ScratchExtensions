@@ -7,7 +7,7 @@ class IfReporter {
             "blocks": [{
                 "opcode": "secId1",
                 "blockType": "reporter",
-                "text": "if [ifbool] then [then] else [else]",
+                "text": "if [ifbool] then [then] else [elsestr]",
                 "arguments": {
                     "ifbool": {
                         "type": "Boolean"
@@ -15,7 +15,7 @@ class IfReporter {
                     "then": {
                         "type": "string"
                     },
-                    "else": {
+                    "elsestr": {
                         "type": "string"
                     }
                 }
@@ -23,8 +23,12 @@ class IfReporter {
             "menus": {}
         };
     }
-    secId1({ifbool, then, else})
-    if ()
+    secId1({ifbool, then, elsestr})
+    if (ifbool == true) {
+     return(then);   
+    } else {
+        return(elsestr);
+           }
         callback();
     }
     _formatMenu(menu) {
