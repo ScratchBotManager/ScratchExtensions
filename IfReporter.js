@@ -1,1 +1,20 @@
-var boolean; ext._shutdown = function() {};ext._getStatus = function() { return {status: 2, msg: 'Ready'};}; boolean = (b); ext.ifthenelsereporter = function (a,b,c,callback){ if (boolean == true) { return (c); } else { return (d); } }; var descriptor = { blocks: [ ["r","( if( %b( then( %s( else( %s))))))","ifthenelsereporter"],],menus: {},url: 'https://kyleplo.github.io/scratch-extension-creator/help#'A Scratch 1.4 Custom Block Returns};ScratchExtensions.register('My Extension', descriptor, ext);
+(function (ext) {
+	var ExtName = 'IfReporter';
+	ext._shutdown = function() {};
+	ext._getStatus = function() {
+		return {status: 2, msg: 'Ready'};
+	};
+	var descriptor = {
+	        blocks: [
+	            ['r', 'if [if] then [then] else [else]', 'secId1'],
+	        ],
+			menus: {
+			},
+	        url: ''
+	};
+	ext.secId1 = function(ext,callback){
+		
+		callback();
+	};
+	ScratchExtensions.register(ExtName, descriptor, ext);
+})({});
