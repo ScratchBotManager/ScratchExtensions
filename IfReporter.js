@@ -25,9 +25,9 @@ class IfReporter {
     }
     secId1({ifbool, then, elsestr})
     if (ifbool == true) {
-        callback(then);
+        return then;
     } else {
-        callback(elsestr);
+        return elsestr;
            }
 
     }
