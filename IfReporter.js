@@ -6,18 +6,13 @@
 	};
 	var descriptor = {
 	        blocks: [
-	            ['r', 'if [if] then [then] else [else]', 'secId1'],
-	            ['r', 'if %b then %s else %s', 'secId2'],
+	            ['r', 'if %b then %s else %s', 'secId1'],
 	        ],
 			menus: {
 			},
 	        url: ''
 	};
 	ext.secId1 = function(ext,callback){
-		
-		callback();
-	};
-	ext.secId2 = function(ext,callback){
 		
 		callback();
 	};
