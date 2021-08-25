@@ -7,15 +7,15 @@ class IfReporter {
             "blocks": [{
                 "opcode": "secId1",
                 "blockType": "reporter",
-                "text": "if [ext] then [callback] else [undefined]",
+                "text": "if [ifbool] then [then] else [else]",
                 "arguments": {
-                    "ext": {
+                    "ifbool": {
                         "type": "Boolean"
                     },
-                    "callback": {
+                    "then": {
                         "type": "string"
                     },
-                    "undefined": {
+                    "else": {
                         "type": "string"
                     }
                 }
@@ -23,11 +23,8 @@ class IfReporter {
             "menus": {}
         };
     }
-    secId1({
-        ext,
-        callback
-    }) {
-
+    secId1({ifbool, then, else})
+    if ()
         callback();
     }
     _formatMenu(menu) {
