@@ -19,13 +19,28 @@ class Javascript {
             }, {
                 "opcode": "secId2",
                 "blockType": "reporter",
-                "text": "Javascript Function [ext]",
+                "text": "Javascript Function ([Inputs]) {[Code]}",
                 "arguments": {
-                    "ext": {
-                        "type": "string",
+                    "Code": {
+                        "type": "string"
+                    }
+                  "Inputs": {
+                        "type": "string"
                     }
                 }
-            }],
+            }, {
+                "opcode": "secId3",
+                "blockType": "reporter",
+                "text": "[t1] And [t2]",
+                "arguments": {
+                "t1": {
+                  "type": "string"
+                       }
+                "t2": {
+                  "type": "string"
+                       }
+                }
+                      ],
             "menus": {}
         };
     }
@@ -33,8 +48,13 @@ class Javascript {
        return ext;
        callback();
     }
-    secId2({ext, callback}) {
-       var code = "function anonymous() {" + ext + "}";
+    secId2({Inputs, Code , callback}) {
+       var code = "function anonymous("+ Inputs +") {" + Code + "}";
+       return code;
+       callback();
+    }
+    secId3({t1, t2, callback}) {
+       var code = t1 + ", " + t2;
        return code;
        callback();
     }
