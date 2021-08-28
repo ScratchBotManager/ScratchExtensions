@@ -54,7 +54,7 @@ class Javascript {
       var s = document.createElement("script"); 
         s.type = "text/javascript"; 
         s.src = var1; 
-        $("head").append(s);;
+        $("head").append(s);
     }
 }
 Scratch.extensions.register(new Javascript());
