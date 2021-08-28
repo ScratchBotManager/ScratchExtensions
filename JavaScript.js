@@ -36,15 +36,6 @@ class Javascript {
        var code = "function anonymous() {" + ext + "}";
        return code;
     }
-    _formatMenu(menu) {
-        const m = [];
-        for (let i = 0; i < menu.length; i++) {
-            const obj = {};
-            obj.text = menu[i];
-            obj.value = i.toString();
-            m.push(obj);
-        }
-        return m;
     }
 }
 Scratch.extensions.register(new Javascript());
