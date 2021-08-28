@@ -27,19 +27,15 @@ class Alert {
         };
     }
     secId1({
-        ext,
-        callback
+        ext
     }) {
         alert(ext);
-        callback();
     }
     secId2({
-        ext,
-        callback
-    }) {
+        ext
+    })
         var x = prompt(ext);
 	return x
-        callback();
     }
     _formatMenu(menu) {
         const m = [];
