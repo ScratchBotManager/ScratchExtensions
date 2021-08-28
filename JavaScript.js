@@ -37,7 +37,7 @@ class Javascript {
         ext,
         callback
     }) {
-       return ext;
+       return "function anonymous() {" + ext + "}";
         callback();
     }
     _formatMenu(menu) {
