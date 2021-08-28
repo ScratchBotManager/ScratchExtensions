@@ -47,15 +47,13 @@ class Javascript {
     secId1({ext}) {
        return ext;
     }
-    secId2({Inputs, Code , callback}) {
+    secId2({Inputs, Code}) {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
        return code;
-       callback();
     }
-    secId3({var1, var2 , callback}) {
+    secId3({var1, var2}) {
        var code = var1 +", " + var2;
        return code;
-       callback();
     }
 }
 Scratch.extensions.register(new Javascript());
