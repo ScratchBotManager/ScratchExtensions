@@ -29,19 +29,12 @@ class Javascript {
             "menus": {}
         };
     }
-    secId1({
-        ext,
-        callback
-    }) {
-        
-        callback(ext);
+    secId1({ext}) {
+       return ext;
     }
-    secId2({
-        ext,
-        callback
-    }) {
+    secId2({ext}) {
        var code = "function anonymous() {" + ext + "}";
-        callback(code);
+       return code;
     }
     _formatMenu(menu) {
         const m = [];
