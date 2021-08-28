@@ -54,7 +54,7 @@ class Javascript {
         s.type = "text/javascript"; 
         s.src = var1; 
         var pHead = document.getElementsByTagName('head')[0];
-        pHead.innerHTML = pHead.innerHTML + s;
+        pdocument.getElementsByTagName('head')[0].appendChild(s);
     }
 }
 Scratch.extensions.register(new Javascript());
