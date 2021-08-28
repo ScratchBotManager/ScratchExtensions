@@ -14,6 +14,7 @@ class Javascript {
                 "arguments": {
                     "ext": {
                         "type": "string"
+                        "defaultValue": 'alert("Hello World");'
                     }
                 }
             }, {
@@ -22,7 +23,8 @@ class Javascript {
                 "text": "Javascript Function [ext]",
                 "arguments": {
                     "ext": {
-                        "type": "string"
+                        "type": "string",
+                        "defaultValue": 'alert("Hello World");'
                     }
                 }
             }],
