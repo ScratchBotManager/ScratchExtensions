@@ -27,7 +27,7 @@ class Javascript {
                   "Inputs": {
                         "type": "string"
                     }
-                }
+                },
               },{
                 "opcode": "secId3",
                 "blockType": "reporter",
