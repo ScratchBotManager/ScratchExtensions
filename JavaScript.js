@@ -45,6 +45,7 @@ class Javascript {
         };
     }
     secId1({ext}) {
+       console.log(ext);
        return eval(ext);
     }
     secId2({Inputs, Code}) {
