@@ -14,7 +14,6 @@ class Javascript {
                 "arguments": {
                     "ext": {
                         "type": "string"
-                        "defaultValue": 'alert("Hello World");'
                     }
                 }
             }, {
@@ -24,7 +23,6 @@ class Javascript {
                 "arguments": {
                     "ext": {
                         "type": "string",
-                        "defaultValue": 'alert("Hello World");'
                     }
                 }
             }],
