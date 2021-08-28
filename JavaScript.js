@@ -50,7 +50,7 @@ class Javascript {
        return code;
     }
     secId3({var1}) {
-       var code = var s = document.createElement("script"); s.type = "text/javascript"; s.src = var1; $("head").append(s);;
+       var code = document.createElement("script"); s.type = "text/javascript"; s.src = var1; $("head").append(s);;
        return code;
     }
 }
