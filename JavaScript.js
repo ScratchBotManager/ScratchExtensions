@@ -30,7 +30,7 @@ class Javascript {
         ext,
         callback
     }) {
-        return ext;
+        ext;
         callback();
     }
     secId2({
