@@ -36,6 +36,5 @@ class Javascript {
        var code = "function anonymous() {" + ext + "}";
        return code;
     }
-    }
 }
 Scratch.extensions.register(new Javascript());
