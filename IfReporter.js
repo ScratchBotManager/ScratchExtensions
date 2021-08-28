@@ -23,13 +23,22 @@ class IfReporter {
             "menus": {}
         };
       }
-}
-    }
-    IfThenElse({ifbool, then, elsestr})
+        IfThenElse({ifbool, then, elsestr})
     if (ifbool == true) {
         return then;
     } else {
         return elsestr;
            }
+      _formatMenu(menu) {
+        const m = [];
+        for (let i = 0; i < menu.length; i++) {
+            const obj = {};
+            obj.text = menu[i];
+            obj.value = i.toString();
+            m.push(obj);
+        }
+        return m;
+    }
+
 }
 Scratch.extensions.register(new IfReporter());
