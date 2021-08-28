@@ -23,7 +23,5 @@ class IfReporter {
             "menus": {}
         };
       }
-    }
-
 }
 Scratch.extensions.register(new IfReporter());
