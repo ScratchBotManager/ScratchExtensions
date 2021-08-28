@@ -5,7 +5,7 @@ class IfReporter {
             "id": "IfReporter",
             "name": "IfReporter",
             "blocks": [{
-                "opcode": "secId1",
+                "opcode": "IfThenElse",
                 "blockType": "reporter",
                 "text": "if [ifbool] then [then] else [elsestr]",
                 "arguments": {
@@ -22,15 +22,13 @@ class IfReporter {
             }],
             "menus": {}
         };
+      }
     }
-    secId1({ifbool, then, elsestr})
+    IfThenElse({ifbool, then, elsestr})
     if (ifbool == true) {
         return then;
     } else {
         return elsestr;
            }
-
-    }
-    }
 }
 Scratch.extensions.register(new IfReporter());
