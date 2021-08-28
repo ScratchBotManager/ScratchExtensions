@@ -24,7 +24,7 @@ class Javascript {
                     "Code": {
                         "type": "string"
                     }
-                  "Inputs": {
+                  'Inputs': {
                         "type": "string"
                     }
                 }
