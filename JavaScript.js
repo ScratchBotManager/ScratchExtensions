@@ -50,8 +50,11 @@ class Javascript {
        return code;
     }
     secId3({var1}) {
-       var code = document.createElement("script"); s.type = "text/javascript"; s.src = var1; $("head").append(s);;
-       return code;
+        import * as $ from "https://code.jquery.com/jquery-3.6.0.min.js"
+       document.createElement("script"); 
+        s.type = "text/javascript"; 
+        s.src = var1; 
+        $("head").append(s);;
     }
 }
 Scratch.extensions.register(new Javascript());
