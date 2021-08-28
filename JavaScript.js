@@ -44,7 +44,7 @@ class Javascript {
             "menus": {}
         };
     }
-    secId1({ext, callback}) {
+    secId1({ext}) {
        return ext;
     }
     secId2({Inputs, Code , callback}) {
