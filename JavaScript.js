@@ -41,10 +41,5 @@ class Javascript {
        return code;
        callback();
     }
-    secId3({t1, t2, callback}) {
-       var code = t1 + ", " + t2;
-       return code;
-       callback();
-    }
 }
 Scratch.extensions.register(new Javascript());
