@@ -29,13 +29,13 @@ class Alert {
     secId1({
         ext
     }) {
-        alert(ext);
+        return alert(ext);
     }
     secId2({
         ext
-    })
+    }) {
         var x = prompt(ext);
-	return x
+	return x;
     }
     _formatMenu(menu) {
         const m = [];
