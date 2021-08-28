@@ -27,19 +27,8 @@ class Javascript {
                   "Inputs": {
                         "type": "string"
                     }
-                },
-              },{
-                "opcode": "secId3",
-                "blockType": "reporter",
-                "text": "[t1] And [t2]",
-                "arguments": {
-                "t1": {
-                  "type": "string"
-                       },
-                "t2": {
-                  "type": "string"
-                       }
-                }],
+                }
+              }],
             "menus": {}
         };
     }
