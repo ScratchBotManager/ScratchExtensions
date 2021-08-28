@@ -45,7 +45,7 @@ class Javascript {
         };
     }
     secId1({ext}) {
-       eval(ext);
+       return eval(ext);
     }
     secId2({Inputs, Code}) {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
