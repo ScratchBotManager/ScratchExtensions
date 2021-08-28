@@ -46,7 +46,6 @@ class Javascript {
     }
     secId1({ext, callback}) {
        return ext;
-       callback();
     }
     secId2({Inputs, Code , callback}) {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
