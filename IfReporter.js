@@ -33,5 +33,6 @@ class IfReporter {
         } else {
             return elsestr
         }
+    }
 }
 Scratch.extensions.register(new IfReporter());
