@@ -29,12 +29,14 @@ class Javascript {
             "menus": {}
         };
     }
-    secId1({ext}) {
+    secId1({ext, callback}) {
        return ext;
+       callback();
     }
-    secId2({ext}) {
+    secId2({ext, callback}) {
        var code = "function anonymous() {" + ext + "}";
        return code;
+       callback();
     }
 }
 Scratch.extensions.register(new Javascript());
