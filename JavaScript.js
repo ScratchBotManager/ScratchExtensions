@@ -23,8 +23,8 @@ class Javascript {
                 "arguments": {
                     "Code": {
                         "type": "string"
-                    }
-                  'Inputs': {
+                    },
+                  "Inputs": {
                         "type": "string"
                     }
                 }
@@ -35,7 +35,7 @@ class Javascript {
                 "arguments": {
                 "t1": {
                   "type": "string"
-                       }
+                       },
                 "t2": {
                   "type": "string"
                        }
