@@ -23,6 +23,7 @@ class IfReporter {
             "menus": {}
         };
       }
+}
     }
     IfThenElse({ifbool, then, elsestr})
     if (ifbool == true) {
