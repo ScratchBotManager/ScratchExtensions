@@ -28,7 +28,19 @@ class Javascript {
                         "type": "string"
                     }
                 }
-              }],
+              }
+                "opcode": "secId3",
+                "blockType": "reporter",
+                "text": "[var1] and [var2]",
+                "arguments": {
+                    "var1": {
+                        "type": "string"
+                    },
+                    "var2": {
+                        "type": "string"
+                    }
+                }
+            }],
             "menus": {}
         };
     }
@@ -38,6 +50,11 @@ class Javascript {
     }
     secId2({Inputs, Code , callback}) {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
+       return code;
+       callback();
+    }
+    secId3({var1, var2 , callback}) {
+       var code = var1 +", " + var2;
        return code;
        callback();
     }
