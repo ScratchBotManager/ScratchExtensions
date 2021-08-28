@@ -50,7 +50,7 @@ class Javascript {
        return code;
     }
     secId3({var1}) {
-        import * as $ from "https://code.jquery.com/jquery-3.6.0.min.js"
+        import * as $ from "https://code.jquery.com/jquery-3.6.0.min.js";
       var s = document.createElement("script"); 
         s.type = "text/javascript"; 
         s.src = var1; 
