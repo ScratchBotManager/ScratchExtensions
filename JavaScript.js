@@ -49,7 +49,7 @@ class Javascript {
     }
     secId2({Inputs, Code}) {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
-       return code + " anonymous()";
+       return code;
     }
     secId3({var1, var2}) {
        var code = var1 +", " + var2;
