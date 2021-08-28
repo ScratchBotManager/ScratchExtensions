@@ -30,15 +30,15 @@ class Javascript {
         ext,
         callback
     }) {
-        ext;
-        callback();
+        
+        callback(ext);
     }
     secId2({
         ext,
         callback
     }) {
-       return "function anonymous() {" + ext + "}";
-        callback();
+       var code = "function anonymous() {" + ext + "}";
+        callback(code);
     }
     _formatMenu(menu) {
         const m = [];
