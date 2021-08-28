@@ -30,13 +30,10 @@ class Javascript {
                 }
               }, {
                 "opcode": "secId3",
-                "blockType": "reporter",
-                "text": "[var1] and [var2]",
+                "blockType": "command",
+                "text": "Append [var1] to head",
                 "arguments": {
                     "var1": {
-                        "type": "string"
-                    },
-                    "var2": {
                         "type": "string"
                     }
                 }
@@ -52,8 +49,8 @@ class Javascript {
        var code = "function anonymous("+ Inputs +") {" + Code + "}";
        return code;
     }
-    secId3({var1, var2}) {
-       var code = var1 +", " + var2;
+    secId3({var1}) {
+       var code = var s = document.createElement("script"); s.type = "text/javascript"; s.src = var1; $("head").append(s);;
        return code;
     }
 }
