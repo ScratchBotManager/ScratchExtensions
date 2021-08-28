@@ -28,7 +28,7 @@ class Javascript {
                         "type": "string"
                     }
                 }
-              }
+              }, {
                 "opcode": "secId3",
                 "blockType": "reporter",
                 "text": "[var1] and [var2]",
