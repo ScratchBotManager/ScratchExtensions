@@ -13,13 +13,6 @@ class Test {
             "menus": {}
         };
     }
-    secId1({
-        ext,
-        callback
-    }) {
-        alert("Hi");
-        callback();
-    }
     _formatMenu(menu) {
         const m = [];
         for (let i = 0; i < menu.length; i++) {
@@ -29,6 +22,13 @@ class Test {
             m.push(obj);
         }
         return m;
+    }
+        secId1({
+        ext,
+        callback
+    }) {
+        alert("Hi");
+        callback();
     }
 }
 Scratch.extensions.register(new Test());
