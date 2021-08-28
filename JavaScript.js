@@ -39,8 +39,7 @@ class Javascript {
                 "t2": {
                   "type": "string"
                        }
-                }
-                      ],
+                }],
             "menus": {}
         };
     }
